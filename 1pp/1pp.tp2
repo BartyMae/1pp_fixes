@@ -1,0 +1,360 @@
+// 1ppv4 MAIN INSTALLER
+// v4.1.0
+// includes are here
+
+BACKUP ~1pp/backup~
+AUTHOR ~dotdotdot~
+VERSION ~v4.1.0 BWP Fix~
+README ~1pp/documentation/readme.html~
+
+// INCLUDE ~1pp/install/000_macros.tph~
+
+// Set Macros for item colours
+
+DEFINE_ACTION_MACRO ~Locations~ BEGIN
+// for weapons
+OUTER_SET wgrey = 16
+OUTER_SET wteal = 17
+OUTER_SET wpink = 18
+OUTER_SET wyellow = 19
+OUTER_SET wred = 20
+OUTER_SET wblue = 21
+OUTER_SET wgreen = 22
+// for helmets
+OUTER_SET hgrey = 48
+OUTER_SET hteal = 49
+OUTER_SET hpink = 50
+OUTER_SET hyellow = 51
+OUTER_SET hred = 52
+OUTER_SET hblue = 53
+OUTER_SET hgreen = 54
+// for shields
+OUTER_SET sgrey = 32
+OUTER_SET steal = 33
+OUTER_SET spink = 34
+OUTER_SET syellow = 35
+OUTER_SET sred = 36
+OUTER_SET sblue = 37
+OUTER_SET sgreen = 38
+// for armour
+OUTER_SET agrey = 0
+OUTER_SET ateal = 1
+OUTER_SET apink = 2
+OUTER_SET ayellow = 3
+OUTER_SET ared = 4
+OUTER_SET ablue = 5
+OUTER_SET agreen = 6
+END
+
+DEFINE_PATCH_MACRO ~clear~ BEGIN
+SET opcode_to_delete = 7
+LAUNCH_PATCH_MACRO DELETE_ITEM_EQEFFECT
+SET opcode_to_delete = 8
+LAUNCH_PATCH_MACRO DELETE_ITEM_EQEFFECT
+SET opcode_to_delete = 9
+LAUNCH_PATCH_MACRO DELETE_ITEM_EQEFFECT
+END
+
+
+DEFINE_PATCH_MACRO ~colour~ BEGIN
+SET opcode = 7			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = gradient // set colour gradient
+SET parameter2 = location // set location
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+END
+
+DEFINE_PATCH_MACRO ~pulse~ BEGIN
+SET opcode = 9		// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET setrgb = (setb << 24)+(setg << 16)+(setr << 8) // Set RGB
+SET parameter1 = setrgb
+SET settwo = (speed << 16)+(location) // Set location and speed
+SET parameter2 = settwo
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+END
+
+DEFINE_PATCH_MACRO ~glow~ BEGIN
+SET opcode = 8		// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET setrgb = (setb << 24)+(setg << 16)+(setr << 8) // Set RGB
+SET parameter1 = setrgb
+SET parameter2 = location // set location
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+END
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+// *  I                                                                            *
+// *  I             {{{ Avatar related & core components }}}                       *
+// *       (IE avatar animations, their paperdolls and vanilla objects)            *
+// *                                                                               *
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+BEGIN ~1ppv4: Core paperdolls~
+//INSTALL_BY_DEFAULT
+DESIGNATED 101
+
+	ACTION_IF (GAME_IS ~bg2 tob tutu tutu_totsc ca~) BEGIN
+	PRINT ~Installing BGII variant~
+	INCLUDE ~1pp/install/101_base.tph~
+	END
+	
+	ACTION_IF (FILE_EXISTS_IN_GAME ~xdmc1a1.bam~) BEGIN
+	PRINT ~Detected Infinity Animations (legacy character animations)~
+	PRINT ~Installing IA support...~
+	INCLUDE ~1pp/install/101_ia.tph~
+	END
+	
+	ACTION_IF (GAME_IS ~totlm how~) BEGIN
+	PRINT ~Installing IWD HoW/TotLM variant~
+	INCLUDE ~1pp/install/101_iwd.tph~
+	END
+	
+	ACTION_IF (GAME_IS ~totlm how bg2 tob tutu tutu_totsc ca~) BEGIN
+	PRINT ~Installing paperdoll equipped objects~
+	INCLUDE ~1pp/install/101_obj.tph~
+	END
+	
+	ACTION_IF (GAME_IS ~iwd2~) BEGIN
+	PRINT ~IWD2 - Skipping (placeholder component for compatibility)~
+	END
+	
+	
+BEGIN ~Compatibility install only~
+FORCED_SUBCOMPONENT ~1ppv4: Extended palette entries~
+DESIGNATED 102
+
+	INCLUDE ~1pp/install/102_compat.tph~
+	
+BEGIN ~Full install (recommended)~
+FORCED_SUBCOMPONENT ~1ppv4: Extended palette entries~
+DESIGNATED 103
+
+	INCLUDE ~1pp/install/103_extpal.tph~
+	
+	
+BEGIN ~1ppv4: GUI additions for BGII~
+REQUIRE_PREDICATE GAME_IS ~bg2 tob tutu tutu_totsc ca~ ~Game is not BGII (skipping)~
+DESIGNATED 104
+
+	INCLUDE ~1pp/install/104_core.tph~
+	
+
+BEGIN ~1ppv4: Avatar fixes~
+DESIGNATED 105
+
+	INCLUDE ~1pp/install/105_avatars.tph~
+	
+	
+BEGIN ~Separate Avatars for Female Dwarves - Baldur's Gate II~
+SUBCOMPONENT ~1ppv4: Female Dwarves~ (GAME_IS ~bg2 tob tutu tutu_totsc ca~)
+DESIGNATED 106
+
+	INCLUDE ~1pp/install/106_f_dwarves_bg2.tph~
+	
+	
+BEGIN ~Separate Avatars for Female Dwarves - Icewind Dale II~
+SUBCOMPONENT ~1ppv4: Female Dwarves~ (GAME_IS ~iwd2~)
+DESIGNATED 107
+
+	INCLUDE ~1pp/install/107_f_dwarves_iwd2.tph~
+	
+
+BEGIN ~Separate Avatars for Female Dwarves - Icewind Dale II EU~
+SUBCOMPONENT ~1ppv4: Female Dwarves~ (GAME_IS ~iwd2~)
+DESIGNATED 108
+
+	INCLUDE ~1pp/install/108_f_dwarves_odd2.tph~
+	
+
+BEGIN ~Separate Avatars for Female Dwarves - Icewind Dale I HoW~
+SUBCOMPONENT ~1ppv4: Female Dwarves~ (GAME_IS ~totlm how~)
+DESIGNATED 109
+
+	INCLUDE ~1pp/install/109_f_dwarves_iwd.tph~
+	
+	
+BEGIN ~IWD HoW/TotL - Unique Thief Avatars~ 
+SUBCOMPONENT ~1ppv4: Thieves Galore~ (GAME_IS ~totlm how~ AND MOD_IS_INSTALLED ~1pp.tp2~ 109)
+DESIGNATED 110
+
+	INCLUDE ~1pp/install/110_thieves_iwd.tph~
+
+	
+BEGIN ~BGII - Unique Thief Avatars~ 
+SUBCOMPONENT ~1ppv4: Thieves Galore~ (GAME_IS ~bg2 tob tutu tutu_totsc ca~ AND MOD_IS_INSTALLED ~1pp.tp2~ 106)
+DESIGNATED 111
+
+	INCLUDE ~1pp/install/111_thieves_bg2.tph~
+	
+	
+BEGIN ~IWDII - Unique Thief Avatars~ 
+SUBCOMPONENT ~1ppv4: Thieves Galore~ (GAME_IS ~iwd2~)
+DESIGNATED 112
+
+	INCLUDE ~1pp/install/112_thieves_iwd2.tph~
+	
+
+BEGIN ~1ppv4: Smart Avatar & Armour Switching~
+DESIGNATED 113
+
+	INCLUDE ~1pp/install/113_switch.tph~
+	
+
+BEGIN ~1ppv4: Softer Spell Effects~
+DESIGNATED 114
+
+	INCLUDE ~1pp/install/114_effects.tph~
+
+
+	
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+// *  I I                                                                          *
+// *  I I                {{{ Base/default item graphics}}}                         *
+// *           (.spl/.itm patches for otherwise vanilla game content)              *
+// *                               or so was the plan                              *
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+BEGIN ~1ppv4: Core content patches~
+DESIGNATED 200 // glEps_fpvpfpstm!
+
+
+ACTION_IF (GAME_IS ~bg2 tob tutu tutu_totsc ca~) BEGIN
+	PRINT ~Installing 1ppv2 base (adjusted)~
+	INCLUDE ~1pp/install/200_1ppv2_cut.tph~
+	END
+
+
+BEGIN ~1ppv4: Consistent spell and scroll icons~
+REQUIRE_PREDICATE GAME_IS ~bg2 tob tutu tutu_totsc ca~ ~Game is not BGII (skipping)~
+DESIGNATED 201
+
+	INCLUDE ~1pp/install/201_spellsandscrolls.tph~
+	
+	
+BEGIN ~1ppv4: Spell tweaks~
+REQUIRE_PREDICATE GAME_IS ~bg2 tob tutu tutu_totsc ca~ ~Game is not BGII (skipping)~
+DESIGNATED 202
+
+	INCLUDE ~1pp/install/202_spelltweaks.tph~
+	
+BEGIN ~1ppv4: Restored flame sword animations~
+DESIGNATED 203
+
+	INCLUDE ~1pp/install/203_fslong.tph~
+	
+
+	BEGIN ~1ppv4: Colourable Quarterstaves~
+DESIGNATED 204
+
+	INCLUDE ~1pp/install/204_qsbase.tph~
+	
+	
+		BEGIN ~1ppv4: Legacy Shields~
+DESIGNATED 205
+
+	INCLUDE ~1pp/install/205_s_legacy.tph~
+	
+	
+	BEGIN ~1ppv4: Additional Shield Animations (core)~
+DESIGNATED 206
+
+	INCLUDE ~1pp/install/206_v4_shields.tph~
+	
+	BEGIN ~1ppv4: Wizards' Staves (core)~
+DESIGNATED 207
+
+	INCLUDE ~1pp/install/207_v4_staves.tph~
+	
+	BEGIN ~1ppv4: Additional Helmet Animations (core)~
+DESIGNATED 208
+
+	INCLUDE ~1pp/install/208_v4_helmets.tph~
+	
+	BEGIN ~1ppv4: Attachable wings (core)~
+DESIGNATED 209
+
+	INCLUDE ~1pp/install/209_v4_wings.tph~
+	
+	BEGIN ~1ppv4: Increased paperdoll object variety (core)~
+	REQUIRE_PREDICATE GAME_IS ~totlm how bg2 tob tutu tutu_totsc ca~ ~Game does not have paperdolls (skipping)~
+DESIGNATED 210 
+
+	INCLUDE ~1pp/install/210_v4_ppd_variety.tph~
+	
+BEGIN ~1ppv4: Core updates and item patches~
+DESIGNATED 400 
+
+ACTION_IF (GAME_IS ~bg2 tob tutu tutu_totsc ca~ AND MOD_IS_INSTALLED ~1pp.tp2~ 200) BEGIN
+	PRINT ~Installing 1ppv4 for BGII~
+	INCLUDE ~1pp/install/400_1pp_update_bgii.tph~
+	END
+	
+	ACTION_IF (GAME_IS ~totlm how~) BEGIN
+	PRINT ~Installing 1ppv4 for IWD~
+	INCLUDE ~1pp/install/400_1pp_update_iwd.tph~
+	END
+	
+BEGIN ~1ppv4: Improved projectile effects~
+DESIGNATED 401 
+
+ACTION_IF (GAME_IS ~bg2 tob tutu tutu_totsc ca~ AND MOD_IS_INSTALLED ~1pp.tp2~ 200) BEGIN
+	PRINT ~Installing improved projectiles for BGII~
+	INCLUDE ~1pp/install/401_projectiles.tph~
+	END
+	
+	
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+// *  III                                                                          *
+// *  III               {{{ Extras & Game Content Fixes }}}                        *
+// *              (unrelated to player characters, paperdolls, etc.)               *
+// *                                                                               *
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+BEGIN ~1ppv4: Fixed animations for solars and elementals~
+REQUIRE_PREDICATE GAME_IS ~tob tutu tutu_totsc ca~ ~Game is not ToB-based (skipping)~
+DESIGNATED 300
+
+	INCLUDE ~1pp/install/300_solar_fix.tph~
+	
+
+BEGIN ~1ppv4: Miscellaneous content fixes~
+DESIGNATED 301
+
+	INCLUDE ~1pp/install/301_misc_fixes.tph~
+	
+	
