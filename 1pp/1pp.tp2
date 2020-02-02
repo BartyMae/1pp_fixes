@@ -4,7 +4,7 @@
 
 BACKUP ~1pp/backup~
 AUTHOR ~dotdotdot~
-VERSION ~v4.1.0 BWP Fix~
+VERSION ~v4.1.0 Bart Fix~
 README ~1pp/documentation/readme.html~
 
 // INCLUDE ~1pp/install/000_macros.tph~

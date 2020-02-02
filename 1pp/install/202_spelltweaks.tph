@@ -58,7 +58,8 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) THEN BEGIN
   COPY		~1pp/item/spells_and_scrolls/tweak/%item%~ ~override~
   END
 
-COPY_EXISTING ~SPPR119D.spl~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR119D.spl~) BEGIN
+COPY_EXISTING ~DVPR119D.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 SET opcode = 215			// Set opcode
 SET target = 2			// target type
@@ -79,8 +80,10 @@ SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
   END
   BUT_ONLY_IF_IT_CHANGES
+END
 
-COPY_EXISTING ~SPPR219D.spl~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR219D.spl~) BEGIN
+COPY_EXISTING ~DVPR219D.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 SET opcode = 215			// Set opcode
 SET target = 2			// target type
@@ -101,8 +104,10 @@ SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
   END
   BUT_ONLY_IF_IT_CHANGES
+END
 
-COPY_EXISTING ~SPPR321D.spl~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR321D.spl~) BEGIN
+COPY_EXISTING ~DVPR321D.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 SET opcode = 215			// Set opcode
 SET target = 2			// target type
@@ -123,8 +128,10 @@ SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
   END
   BUT_ONLY_IF_IT_CHANGES
+END
 
-COPY_EXISTING ~SPPR414D.spl~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR414D.spl~) BEGIN
+COPY_EXISTING ~DVPR414D.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 SET opcode = 215			// Set opcode
 SET target = 2			// target type
@@ -145,9 +152,10 @@ SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
   END
   BUT_ONLY_IF_IT_CHANGES
+END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~SPPR510D.bam~) BEGIN
-  COPY_EXISTING ~SPPR510D.spl~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR510D.spl~) BEGIN
+  COPY_EXISTING ~DVPR510D.spl~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 SET opcode = 215			// Set opcode
 SET target = 2			// target type
