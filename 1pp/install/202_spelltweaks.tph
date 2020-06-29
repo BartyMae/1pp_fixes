@@ -59,124 +59,44 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) THEN BEGIN
   END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR119D.spl~) BEGIN
-COPY_EXISTING ~DVPR119D.spl~ ~override~
+  COPY_EXISTING ~DVPR119D.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-SET opcode = 215			// Set opcode
-SET target = 2			// target type
-SET timing = 0			// timing type
-SET power = 1			// power
-SET resist_dispel = 1	// dispel/resitance
-SET duration = 2		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "1WDCLDAM" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = 1 // param2
-SET header = 1
-LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
   END
   BUT_ONLY_IF_IT_CHANGES
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR219D.spl~) BEGIN
-COPY_EXISTING ~DVPR219D.spl~ ~override~
+  COPY_EXISTING ~DVPR219D.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-SET opcode = 215			// Set opcode
-SET target = 2			// target type
-SET timing = 0			// timing type
-SET power = 1			// power
-SET resist_dispel = 1	// dispel/resitance
-SET duration = 2		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "1WDCMDAM" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = 1 // param2
-SET header = 1
-LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
   END
   BUT_ONLY_IF_IT_CHANGES
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR321D.spl~) BEGIN
-COPY_EXISTING ~DVPR321D.spl~ ~override~
+  COPY_EXISTING ~DVPR321D.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-SET opcode = 215			// Set opcode
-SET target = 2			// target type
-SET timing = 0			// timing type
-SET power = 1			// power
-SET resist_dispel = 1	// dispel/resitance
-SET duration = 2		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "1WDCSDAM" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = 1 // param2
-SET header = 1
-LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
   END
   BUT_ONLY_IF_IT_CHANGES
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR414D.spl~) BEGIN
-COPY_EXISTING ~DVPR414D.spl~ ~override~
+  COPY_EXISTING ~DVPR414D.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-SET opcode = 215			// Set opcode
-SET target = 2			// target type
-SET timing = 0			// timing type
-SET power = 1			// power
-SET resist_dispel = 1	// dispel/resitance
-SET duration = 2		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "1WDCCDAM" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = 1 // param2
-SET header = 1
-LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
   END
   BUT_ONLY_IF_IT_CHANGES
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR510D.spl~) BEGIN
   COPY_EXISTING ~DVPR510D.spl~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-SET opcode = 215			// Set opcode
-SET target = 2			// target type
-SET timing = 0			// timing type
-SET power = 1			// power
-SET resist_dispel = 1	// dispel/resitance
-SET duration = 2		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "1WDCCDAM" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = 1 // param2
-SET header = 1
-LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-    END
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
+  END
   BUT_ONLY_IF_IT_CHANGES
-END  
+END
 
 PRINT ~Do you want existing 'cause wound' spells to use IWD-style icons? (healing icon in red) 
 
