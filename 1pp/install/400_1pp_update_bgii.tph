@@ -9604,10 +9604,10 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 COPY_EXISTING ~sper05.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 201	// colour index
+	SET gradient = 226	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 1	// colour index
+	SET gradient = 234	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -9646,10 +9646,10 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 COPY_EXISTING ~sper08.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 206	// colour index
+	SET gradient = 209	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 241	// colour index
+	SET gradient = 227	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -9680,10 +9680,10 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	SET speed = 0x46
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~pulse~
-	SET gradient = 97	// colour index
+	SET gradient = 104	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 39	// colour index
+	SET gradient = 94	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
