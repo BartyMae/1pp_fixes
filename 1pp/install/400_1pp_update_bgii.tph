@@ -15111,13 +15111,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~ISTAF24~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 232	// colour index
+	SET gradient = 81	// colour index
 	SET location = agrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 91	// colour index
+	SET gradient = 60	// colour index
 	SET location = ared		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 184	// colour index
+	SET gradient = 185	// colour index
 	SET location = ablue		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
