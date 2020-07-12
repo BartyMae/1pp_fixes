@@ -11101,13 +11101,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	SET setb = 0
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~glow~
-	SET gradient = 196	// colour index
+	SET gradient = 151	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 231	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 119	// colour index
+	SET gradient = 185	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -11141,13 +11141,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 99	// colour index
+	SET gradient = 25	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 226	// colour index
+	SET gradient = 249	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 94	// colour index
+	SET gradient = 40	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -11161,10 +11161,10 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 81	// colour index
+	SET gradient = 25	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 248	// colour index
+	SET gradient = 249	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 215	// colour index
@@ -11181,13 +11181,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 81 // colour index
+	SET gradient = 25 // colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 202	// colour index
+	SET gradient = 231	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 119	// colour index
+	SET gradient = 117	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
