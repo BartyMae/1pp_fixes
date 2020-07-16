@@ -4238,7 +4238,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~helm13.itm~) THEN BEGIN //changed from plainer look to more proper feathered
+  ACTION_IF (FILE_EXISTS_IN_GAME ~helm13.itm~) THEN BEGIN // Changed from plainer look to more proper feathered
 COPY_EXISTING ~helm13.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~J4~
@@ -4298,7 +4298,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~helm15.itm~) THEN BEGIN //change from basic helm to horned look
+  ACTION_IF (FILE_EXISTS_IN_GAME ~helm15.itm~) THEN BEGIN // Change from basic helm to horned look
 COPY_EXISTING ~helm15.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~J3~
@@ -7439,7 +7439,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h05a.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h05a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h05a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7456,7 +7456,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h05b.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h05b.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h05b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7490,7 +7490,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h06a.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h06a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h06a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7507,7 +7507,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h06b.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h06b.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h06b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7558,7 +7558,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h08a.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h08a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h08a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7575,7 +7575,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h08b.itm~) THEN BEGIN  //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h08b.itm~) THEN BEGIN  // IR compatibility
 COPY_EXISTING ~ax1h08b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7609,7 +7609,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h09a.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h09a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h09a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7626,7 +7626,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h09b.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h09b.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h09b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7678,7 +7678,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h10a.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h10a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h10a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7713,7 +7713,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h10b.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h10b.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h10b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7898,7 +7898,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h16a.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h16a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h16a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -7915,7 +7915,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h16b.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ax1h16b.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~ax1h16b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8140,7 +8140,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg09a.itm~) THEN BEGIN //IR compatibility
+	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg09a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~dagg09a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8157,7 +8157,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg09b.itm~) THEN BEGIN //IR compatibility
+	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg09b.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~dagg09b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8243,7 +8243,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg11a.itm~) THEN BEGIN //IR compatibility
+	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg11a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~dagg11a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8260,7 +8260,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg11b.itm~) THEN BEGIN //IR compatibility
+	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg11b.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~dagg11b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8300,7 +8300,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg12a.itm~) THEN BEGIN //IR compatibility
+	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg12a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~dagg12a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8323,7 +8323,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg12b.itm~) THEN BEGIN //IR compatibility
+	ACTION_IF (FILE_EXISTS_IN_GAME ~dagg12b.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~dagg12b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8517,7 +8517,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~dagg22a.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~dagg22a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~dagg22a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8593,13 +8593,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 COPY_EXISTING ~_hamm01.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 92	// colour index
+	SET gradient = 25	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 90	// colour index
+	SET gradient = 40	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 30	// colour index
+	SET gradient = 248	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -8711,7 +8711,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm05.itm~) THEN BEGIN //Switch back to ihamm05
+  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm05.itm~) THEN BEGIN // Switch back to ihamm05
 COPY_EXISTING ~hamm05.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     WRITE_LONG  0x3E 0
@@ -8776,13 +8776,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	SET speed = 0x28
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~pulse~
-	SET gradient = 209	//93 colour index
+	SET gradient = 94	//93 colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 212	//211 colour index
+	SET gradient = 231	//211 colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 212	//90 colour index
+	SET gradient = 231	//90 colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -8812,7 +8812,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm06a.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm06a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~hamm06a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8834,7 +8834,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm06b.itm~) THEN BEGIN //IR compatibility
+  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm06b.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~hamm06b.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8882,7 +8882,24 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     END
   BUT_ONLY_IF_IT_CHANGES
   END
- 
+
+ ACTION_IF (FILE_EXISTS_IN_GAME ~hamm08.itm~) THEN BEGIN
+COPY_EXISTING ~hamm08.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    LAUNCH_PATCH_MACRO ~clear~
+	SET gradient = 9	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 186	// colour index
+	SET location = wred		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 218	// colour index
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm09.itm~) THEN BEGIN
 COPY_EXISTING ~hamm09.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
@@ -8911,7 +8928,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
- ACTION_IF (FILE_EXISTS_IN_GAME ~hamm09a.itm~) THEN BEGIN //IR compatibility
+ ACTION_IF (FILE_EXISTS_IN_GAME ~hamm09a.itm~) THEN BEGIN // IR compatibility
 COPY_EXISTING ~hamm09a.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
@@ -8939,23 +8956,6 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
 
- ACTION_IF (FILE_EXISTS_IN_GAME ~hamm08.itm~) THEN BEGIN
-COPY_EXISTING ~hamm08.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-    LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 9	// colour index
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 186	// colour index
-	SET location = wred		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 218	// colour index
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~colour~
-    END
-  BUT_ONLY_IF_IT_CHANGES
-  END
- 
 /*  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm10.itm~) THEN BEGIN // Disable for now
 COPY_EXISTING ~hamm10.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
@@ -9094,13 +9094,13 @@ COPY_EXISTING ~xbow03.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	// WRITE_ASCII 0x22 ~XB~
     LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 83	// colour index
+	SET gradient = 240	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 240	// colour index
+	SET gradient = 81	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 25	// colour index
+	SET gradient = 83	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -9169,7 +9169,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	SET gradient = 209	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 159	// colour index
+	SET gradient = 100	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 6	// colour index
@@ -9206,13 +9206,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	WRITE_LONG  0x7A 0
     WRITE_ASCII 0x76 ~IXBOW11~
     LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 253	// colour index
+	SET gradient = 1	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 205	// colour index
+	SET gradient = 23	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 249	// colour index
+	SET gradient = 91	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -9425,7 +9425,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
 
-    ACTION_IF (FILE_EXISTS_IN_GAME ~bgmisc89.itm~) THEN BEGIN //BGT & IR compatibility
+    ACTION_IF (FILE_EXISTS_IN_GAME ~bgmisc89.itm~) THEN BEGIN // BGT & IR compatibility
 COPY_EXISTING ~bgmisc89.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     WRITE_LONG  0x3E 0
@@ -10048,13 +10048,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 99	// colour index
+	SET gradient = 25	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 248	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 94	// colour index
+	SET gradient = 40	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -10128,13 +10128,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 232	// colour index
+	SET gradient = 165	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 231	// colour index
+	SET gradient = 179	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 183	// colour index
+	SET gradient = 185	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -10168,13 +10168,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 99	// colour index
+	SET gradient = 25	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 248	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 22	// colour index
+	SET gradient = 40	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -10400,13 +10400,73 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	SET speed = 0x2d
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~pulse~
-	SET gradient = 29	// colour index
+	SET gradient = 6	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 6	// colour index
+	SET gradient = 21	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 195	// colour index
+	SET location = wred		// location
+	LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+  
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h16.itm~) THEN BEGIN
+COPY_EXISTING ~sw1h16.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    // WRITE_ASCII 0x22 ~S0~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+	LAUNCH_PATCH_MACRO ~clear~
+	SET setr = 0
+	SET setg = 75
+	SET setb = 114
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~glow~
+	SET setr = 0
+	SET setg = 36
+	SET setb = 84
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~glow~
+	SET gradient = 172	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 231	// colour index
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 168	// colour index
+	SET location = wred		// location
+	LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+  
+  ACTION_IF (FILE_EXISTS_IN_GAME ~_sw1h16.itm~) THEN BEGIN
+COPY_EXISTING ~_sw1h16.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    // WRITE_ASCII 0x22 ~S0~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+	LAUNCH_PATCH_MACRO ~clear~
+	SET setr = 0
+	SET setg = 75
+	SET setb = 114
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~glow~
+	SET setr = 0
+	SET setg = 36
+	SET setb = 84
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~glow~
+	SET gradient = 172	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 231	// colour index
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 168	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -10440,10 +10500,10 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 67	// colour index
+	SET gradient = 81	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 211	// colour index
+	SET gradient = 85	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 230	// colour index
@@ -10480,13 +10540,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 99	// colour index
+	SET gradient = 25	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 226	// colour index
+	SET gradient = 249	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 94	// colour index
+	SET gradient = 40	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -10584,73 +10644,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	SET setb = 0
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~glow~
-	SET gradient = 208	// colour index
+	SET gradient = 99	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 212	// colour index
+	SET gradient = 226	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 252	// colour index
-	SET location = wred		// location
-	LAUNCH_PATCH_MACRO ~colour~
-    END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-  
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h16.itm~) THEN BEGIN
-COPY_EXISTING ~sw1h16.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~S0~
-    // WRITE_LONG  0x3E 0
-    // WRITE_ASCII 0x3A ~~
-	LAUNCH_PATCH_MACRO ~clear~
-	SET setr = 0
-	SET setg = 75
-	SET setb = 114
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~glow~
-	SET setr = 0
-	SET setg = 36
-	SET setb = 84
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~glow~
-	SET gradient = 172	// colour index
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 231	// colour index
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 168	// colour index
-	SET location = wred		// location
-	LAUNCH_PATCH_MACRO ~colour~
-    END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-  
-  ACTION_IF (FILE_EXISTS_IN_GAME ~_sw1h16.itm~) THEN BEGIN
-COPY_EXISTING ~_sw1h16.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~S0~
-    // WRITE_LONG  0x3E 0
-    // WRITE_ASCII 0x3A ~~
-	LAUNCH_PATCH_MACRO ~clear~
-	SET setr = 0
-	SET setg = 75
-	SET setb = 114
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~glow~
-	SET setr = 0
-	SET setg = 36
-	SET setb = 84
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~glow~
-	SET gradient = 224	// colour index
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 232	// colour index
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 221	// colour index
+	SET gradient = 94	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -10737,7 +10737,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h31.itm~) THEN BEGIN //swap Albruin and Daystar back
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h31.itm~) THEN BEGIN // Swap Albruin and Daystar back
 COPY_EXISTING ~sw1h31.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_ASCII 0x22 ~S0~
@@ -10909,7 +10909,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h73.itm~) THEN BEGIN //Changed from Long Sword +2 to Long Sword +3, otherwise they'd be duplicates
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h73.itm~) THEN BEGIN // Changed from Long Sword +2 to Long Sword +3, otherwise they'd be duplicates
 COPY_EXISTING ~sw1h73.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_ASCII 0x22 ~S0~
@@ -11429,13 +11429,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 249	// colour index
+	SET gradient = 27	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 27	// colour index
+	SET gradient = 249	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 24	// colour index
+	SET gradient = 40	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -11451,10 +11451,29 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	SET gradient = 25	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 113	// colour index
+	SET gradient = 205	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 230	// colour index
+	SET gradient = 30	// colour index
+	SET location = wred		// location
+	LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+  
+ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h03.itm~) THEN BEGIN
+COPY_EXISTING ~sw2h03.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+	LAUNCH_PATCH_MACRO ~clear~
+	SET gradient = 25	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 30	// colour index
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 254	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -11480,7 +11499,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h06.itm~) THEN BEGIN //Make all versions of Spider's Bane have the same graphics
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h06.itm~) THEN BEGIN // Make all versions of Spider's Bane have the same graphics
 COPY_EXISTING ~sw2h06.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     WRITE_LONG  0x3E 0
@@ -11488,13 +11507,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	WRITE_LONG  0x7A 0
     WRITE_ASCII 0x76 ~ISW2H13~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 186	// colour index
+	SET gradient = 104	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 5	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 209	// colour index
+	SET gradient = 104	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -11509,34 +11528,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	WRITE_LONG  0x7A 0
     WRITE_ASCII 0x76 ~ISW2H13~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 186	// colour index
+	SET gradient = 104	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 5	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 209	// colour index
-	SET location = wred		// location
-	LAUNCH_PATCH_MACRO ~colour~
-    END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-  
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h13.itm~) THEN BEGIN //Spider's Bane #2
-COPY_EXISTING ~sw2h13.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-    WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~ISW2H13~
-	WRITE_LONG  0x7A 0
-    WRITE_ASCII 0x76 ~ISW2H13~
-	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 186	// colour index
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 5	// colour index
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 209	// colour index
+	SET gradient = 104	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -11549,13 +11547,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 211	// colour index
+	SET gradient = 92	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 254	// colour index
+	SET gradient = 239	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 29	// colour index
+	SET gradient = 1	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -11568,34 +11566,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 211	// colour index
+	SET gradient = 92	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 254	// colour index
+	SET gradient = 239	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 29	// colour index
-	SET location = wred		// location
-	LAUNCH_PATCH_MACRO ~colour~
-    END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-  
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h20.itm~) THEN BEGIN
-COPY_EXISTING ~sw2h20.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-     WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~ISW2H20~
-	WRITE_LONG  0x7A 0
-    WRITE_ASCII 0x76 ~ISW2H20~
-	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 218	// colour index
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 27	// colour index
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 121	// colour index
+	SET gradient = 1	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -11629,7 +11606,124 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h19.itm~) THEN BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h11.itm~) THEN BEGIN
+COPY_EXISTING ~sw2h11.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+	LAUNCH_PATCH_MACRO ~clear~
+	SET gradient = 186	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 110	// colour index
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 186	// colour index
+	SET location = wred		// location
+	LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+  
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h12.itm~) THEN BEGIN
+COPY_EXISTING ~sw2h12.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+	LAUNCH_PATCH_MACRO ~clear~
+	SET setr = 179
+	SET setg = 156
+	SET setb = 212
+	SET speed = 0x64
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~pulse~
+	SET gradient = 96	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 212	// colour index
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 96	// colour index
+	SET location = wred		// location
+	LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+  
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h13.itm~) THEN BEGIN // Make all versions of Spider's Bane have the same graphics
+COPY_EXISTING ~sw2h13.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISW2H13~
+	WRITE_LONG  0x7A 0
+    WRITE_ASCII 0x76 ~ISW2H13~
+	LAUNCH_PATCH_MACRO ~clear~
+	SET gradient = 104	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 5	// colour index
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 104	// colour index
+	SET location = wred		// location
+	LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+  
+ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) THEN BEGIN // IR compatibility
+  END ELSE
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h17.itm~) THEN BEGIN
+COPY_EXISTING ~sw2h17.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+	LAUNCH_PATCH_MACRO ~clear~
+	SET setr = 0
+	SET setg = 0
+	SET setb = 0
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~glow~
+	SET gradient = 210	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 212	// colour index
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 187	// colour index
+	SET location = wred		// location
+	LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) THEN BEGIN // IR compatibility
+  END ELSE
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h18.itm~) THEN BEGIN
+COPY_EXISTING ~sw2h18.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+	LAUNCH_PATCH_MACRO ~clear~
+	SET setr = 0
+	SET setg = 0
+	SET setb = 0
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~glow~
+	SET gradient = 210	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 212	// colour index
+	SET location = wblue		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	SET gradient = 187	// colour index
+	SET location = wred		// location
+	LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+  
+ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h19.itm~) THEN BEGIN
 COPY_EXISTING ~sw2h19.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     WRITE_LONG  0x3E 0
@@ -11656,96 +11750,21 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h11.itm~) THEN BEGIN
-COPY_EXISTING ~sw2h11.itm~ ~override~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h20.itm~) THEN BEGIN
+COPY_EXISTING ~sw2h20.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-    // WRITE_LONG  0x3E 0
-    // WRITE_ASCII 0x3A ~~
+     WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISW2H20~
+	WRITE_LONG  0x7A 0
+    WRITE_ASCII 0x76 ~ISW2H20~
 	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 207	// colour index
+	SET gradient = 218	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 28	// colour index
+	SET gradient = 27	// colour index
 	SET location = wblue		// location
 	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 252	// colour index
-	SET location = wred		// location
-	LAUNCH_PATCH_MACRO ~colour~
-    END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-  
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h12.itm~) THEN BEGIN
-COPY_EXISTING ~sw2h12.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-    // WRITE_LONG  0x3E 0
-    // WRITE_ASCII 0x3A ~~
-	LAUNCH_PATCH_MACRO ~clear~
-	SET setr = 179
-	SET setg = 156
-	SET setb = 212
-	SET speed = 0x64
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~pulse~
-	SET gradient = 244	// colour index
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 176	// colour index
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 202	// colour index
-	SET location = wred		// location
-	LAUNCH_PATCH_MACRO ~colour~
-    END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-  
-ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) THEN BEGIN //IR compatibility
-  END ELSE
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h17.itm~) THEN BEGIN
-COPY_EXISTING ~sw2h17.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-    // WRITE_LONG  0x3E 0
-    // WRITE_ASCII 0x3A ~~
-	LAUNCH_PATCH_MACRO ~clear~
-	SET setr = 0
-	SET setg = 0
-	SET setb = 0
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~glow~
-	SET gradient = 210	// colour index
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 212	// colour index
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 187	// colour index
-	SET location = wred		// location
-	LAUNCH_PATCH_MACRO ~colour~
-    END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) THEN BEGIN //IR compatibility
-  END ELSE
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h18.itm~) THEN BEGIN
-COPY_EXISTING ~sw2h18.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-    // WRITE_LONG  0x3E 0
-    // WRITE_ASCII 0x3A ~~
-	LAUNCH_PATCH_MACRO ~clear~
-	SET setr = 0
-	SET setg = 0
-	SET setb = 0
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~glow~
-	SET gradient = 210	// colour index
-	SET location = wgrey		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 212	// colour index
-	SET location = wblue		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 187	// colour index
+	SET gradient = 121	// colour index
 	SET location = wred		// location
 	LAUNCH_PATCH_MACRO ~colour~
     END
@@ -15859,7 +15878,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
   
-   /*ACTION_IF (FILE_EXISTS_IN_GAME ~plat23.itm~) THEN BEGIN //let it remain vanilla (better looking)
+   /*ACTION_IF (FILE_EXISTS_IN_GAME ~plat23.itm~) THEN BEGIN // Let it remain vanilla (better looking)
 COPY_EXISTING ~plat23.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_ASCII 0x22 ~~
@@ -15932,7 +15951,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
 
-   ACTION_IF (FILE_EXISTS_IN_GAME ~plat19.itm~) THEN BEGIN //might as well use something unused
+   ACTION_IF (FILE_EXISTS_IN_GAME ~plat19.itm~) THEN BEGIN // Might as well use something unused
 COPY_EXISTING ~plat19.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     // WRITE_ASCII 0x22 ~~
