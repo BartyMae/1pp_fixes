@@ -120,19 +120,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~misc5t.itm~) THEN BEGIN
 COPY_EXISTING ~misc5t.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
 LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 11		// colour index
+SET gradient = 94		// colour index
 SET location = wgrey		// location
 LAUNCH_PATCH_MACRO ~colour~
 SET gradient = 24		// colour index
 SET location = wteal		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 19		// colour index
+SET gradient = 238		// colour index
 SET location = wpink		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 26		// colour index
+SET gradient = 238		// colour index
 SET location = wblue		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 99		// colour index
 SET location = wred		// location * compatibility 
 LAUNCH_PATCH_MACRO ~colour~
 END
@@ -142,19 +142,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~misc9o.itm~) THEN BEGIN
 COPY_EXISTING ~misc9o.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
 LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wgrey		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 23		// colour index
+SET gradient = 90		// colour index
 SET location = wteal		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wpink		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wblue		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wred		// location * compatibility 
 LAUNCH_PATCH_MACRO ~colour~
 END
@@ -202,16 +202,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sahstaff.itm~) THEN BEGIN
 COPY_EXISTING ~sahstaff.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
 LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wgrey		// location
 LAUNCH_PATCH_MACRO ~colour~
 SET gradient = 90		// colour index
 SET location = wteal		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
+SET location = wpink		// location
+LAUNCH_PATCH_MACRO ~colour~
+SET gradient = 24		// colour index
 SET location = wblue		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wred		// location * compatibility 
 LAUNCH_PATCH_MACRO ~colour~
 END
@@ -223,16 +226,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~staf01.itm~) THEN BEGIN
 COPY_EXISTING ~staf01.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
 LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wgrey		// location
 LAUNCH_PATCH_MACRO ~colour~
 SET gradient = 90		// colour index
 SET location = wteal		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
+SET location = wpink		// location
+LAUNCH_PATCH_MACRO ~colour~
+SET gradient = 24		// colour index
 SET location = wblue		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wred		// location * compatibility 
 LAUNCH_PATCH_MACRO ~colour~
 END
@@ -242,16 +248,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~_staf01.itm~) THEN BEGIN
 COPY_EXISTING ~_staf01.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
 LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wgrey		// location
 LAUNCH_PATCH_MACRO ~colour~
 SET gradient = 90		// colour index
 SET location = wteal		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
+SET location = wpink		// location
+LAUNCH_PATCH_MACRO ~colour~
+SET gradient = 24		// colour index
 SET location = wblue		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wred		// location * compatibility 
 LAUNCH_PATCH_MACRO ~colour~
 END
@@ -307,16 +316,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~staf03.itm~) THEN BEGIN
 COPY_EXISTING ~staf03.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
 LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wgrey		// location
 LAUNCH_PATCH_MACRO ~colour~
 SET gradient = 90		// colour index
 SET location = wteal		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
+SET location = wpink		// location
+LAUNCH_PATCH_MACRO ~colour~
+SET gradient = 24		// colour index
 SET location = wblue		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wred		// location * compatibility 
 LAUNCH_PATCH_MACRO ~colour~
 END
@@ -326,16 +338,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~staf04.itm~) THEN BEGIN
 COPY_EXISTING ~staf04.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
 LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wgrey		// location
 LAUNCH_PATCH_MACRO ~colour~
 SET gradient = 90		// colour index
 SET location = wteal		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
+SET location = wpink		// location
+LAUNCH_PATCH_MACRO ~colour~
+SET gradient = 24		// colour index
 SET location = wblue		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wred		// location * compatibility 
 LAUNCH_PATCH_MACRO ~colour~
 END
@@ -345,16 +360,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~_staf04.itm~) THEN BEGIN
 COPY_EXISTING ~_staf04.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
 LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 2		// colour index
+SET gradient = 24		// colour index
 SET location = wgrey		// location
 LAUNCH_PATCH_MACRO ~colour~
 SET gradient = 90		// colour index
 SET location = wteal		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 2		// colour index
+SET gradient = 24		// colour index
+SET location = wpink		// location
+LAUNCH_PATCH_MACRO ~colour~
+SET gradient = 24		// colour index
 SET location = wblue		// location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 22		// colour index
+SET gradient = 24		// colour index
 SET location = wred		// location * compatibility 
 LAUNCH_PATCH_MACRO ~colour~
 END
