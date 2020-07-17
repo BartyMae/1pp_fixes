@@ -9278,6 +9278,9 @@ COPY_EXISTING ~xbow15.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	// WRITE_ASCII 0x22 ~XB~
     LAUNCH_PATCH_MACRO ~clear~
+	SET gradient = 19	// colour index
+	SET location = wpink		// location
+	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 209	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
@@ -9296,6 +9299,9 @@ COPY_EXISTING ~xbow16.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 	// WRITE_ASCII 0x22 ~XB~
     LAUNCH_PATCH_MACRO ~clear~
+	SET gradient = 19	// colour index
+	SET location = wpink		// location
+	LAUNCH_PATCH_MACRO ~colour~
 	SET gradient = 209	// colour index
 	SET location = wgrey		// location
 	LAUNCH_PATCH_MACRO ~colour~
