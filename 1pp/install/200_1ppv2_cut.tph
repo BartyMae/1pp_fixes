@@ -94,7 +94,7 @@ COPY_EXISTING ~demosum4.itm~ ~override~
   BUT_ONLY_IF_IT_CHANGES
   END
   
-    ACTION_IF (FILE_EXISTS_IN_GAME ~halb07.itm~) THEN BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~halb07.itm~) THEN BEGIN // Why?
   COPY_EXISTING ~halb07.itm~ ~override~
   WRITE_LONG  0x3E 0
   WRITE_ASCII 0x3A ~ihalb07~
@@ -238,7 +238,7 @@ COPY_EXISTING ~helm33.itm~ ~override~
   BUT_ONLY_IF_IT_CHANGES
 	END
   
-  ACTION_FOR_EACH ~item~ IN ~killsw01~ ~sw1h06~    BEGIN
+  ACTION_FOR_EACH ~item~ IN ~killsw01~ ~sw1h06~    BEGIN // Why?
     ACTION_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) THEN BEGIN
       COPY_EXISTING ~%item%.itm~ ~override~
   WRITE_LONG  0x3E 0
@@ -1389,7 +1389,7 @@ COPY_EXISTING ~sw1h18.itm~ ~override~
   BUT_ONLY_IF_IT_CHANGES
 END
 
-    ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h23.itm~) THEN BEGIN  
+    ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h23.itm~) THEN BEGIN // Why?
 COPY_EXISTING ~sw1h23.itm~ ~override~
   WRITE_LONG  0x3E 0
   WRITE_ASCII 0x3A ~ISW1H23~
@@ -1455,7 +1455,7 @@ COPY_EXISTING ~sw1h34.itm~ ~override~
   BUT_ONLY_IF_IT_CHANGES
 END*/
   
-      ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h41.itm~) THEN BEGIN
+      ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h41.itm~) THEN BEGIN // Why?
 COPY_EXISTING ~sw1h41.itm~ ~override~
   WRITE_LONG  0x3E 0
   WRITE_ASCII 0x3A ~ISW1H41~
@@ -1472,7 +1472,7 @@ COPY_EXISTING ~sw1h41.itm~ ~override~
   BUT_ONLY_IF_IT_CHANGES
 END
 
-    ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h52.itm~) THEN BEGIN  
+    ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h52.itm~) THEN BEGIN
 COPY_EXISTING ~sw1h52.itm~ ~override~
   WRITE_LONG  0x3E 0
   WRITE_ASCII 0x3A ~ISW1H52~
@@ -1603,7 +1603,7 @@ COPY_EXISTING ~sw1h71.itm~ ~override~
   BUT_ONLY_IF_IT_CHANGES
 END
   
-  ACTION_FOR_EACH ~item~ IN ~sw2h10~ ~sw2h19~    BEGIN //Why was this being set to ISW2H20? ...
+  ACTION_FOR_EACH ~item~ IN ~sw2h10~ ~sw2h19~    BEGIN // Why?
     ACTION_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) THEN BEGIN
       COPY_EXISTING ~%item%.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
@@ -1624,7 +1624,7 @@ END
 END
 END
   
-   ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h11.itm~) THEN BEGIN
+   ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h11.itm~) THEN BEGIN // Why?
 COPY_EXISTING ~sw2h11.itm~ ~override~
   WRITE_LONG  0x3E 0
   WRITE_ASCII 0x3A ~ISW2H11~
@@ -1641,7 +1641,7 @@ COPY_EXISTING ~sw2h11.itm~ ~override~
   BUT_ONLY_IF_IT_CHANGES
   END
 
-     ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h20.itm~) THEN BEGIN
+     ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h20.itm~) THEN BEGIN // Why?
 COPY_EXISTING ~sw2h20.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
     WRITE_LONG  0x3E 0
